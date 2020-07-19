@@ -9,13 +9,13 @@
 ### Use statistical models & Machine Learning libraries to test the relationship between internal/external variables and Energy Company share prices.
 
 ## Project Summary:
-A million-dollar question is what factors can be used to predict future share prices? Our humble attempt was to brainstorm what internal & external factors would most likely impact share prices of large Energy companies. Four factors for each were selected:
+A million-dollar question is what factors can be used to predict future share prices? Our humble attempt was to brainstorm what internal & external factors would most likely impact share prices of large Energy companies. Our belief was that one of the top factors would be the price of oil. Four factors for each were selected:
 
 **Internal:** Revenue, Expenses, Divident Yield, & Cash Flow
 
 **External:** US Interest Rate, US Unemployment Rate, Brent Oil Price, & LNG Price
 
-We gathered quarterly data from the years 2005-2017 using Yahoo Finance, FRED, & Macrotrends websites. Data was gathered for 6 selected large energy companues: **Exxon ( XOM ), BP, Equinor ( EQNR ), Chevron ( CVX ), Shell ( RDS-A ), & Total ( TOT ).** This created a dataset of 312 records. 
+We gathered quarterly data from the years 2005-2017 using Yahoo Finance, FRED, & Macrotrends websites. Data was gathered for 6 selected large energy companues: **Exxon ( XOM ), BP, Equinor ( EQNR ), Chevron ( CVX ), Shell ( RDS-A ), & Total ( TOT ).** This created a dataset of 312 records. SQL was used for data transformation & cleaning.
 
 We started by running a coefficient matrix to check that all variables were independent of each other. It was found that Expenses & Revenue were highly related, therefore we decided to drop Expenses to reduce bias in the dataset. Then we ran a statistical summary to check the significance. **Revenue, Dividend Yield, Cash Flow, & Unemployment Rate were all significant and the remaining variables were insignificant.** 
 
@@ -38,11 +38,42 @@ We then tried to use non-linear models on the data. These included **Decision Tr
  (0.0, 'SharePrice_USD')]</code></pre>
  
 The next step was to use Auto Arima to forecast and visualize the last few quarters of data half of 2017 Q2 data, all 2017 Q3 data, & all 2017 Q4 data. **The objective was to check the actual share price in comparison to the predicted share price.** After the prediction I exported the data points and replotted them using plotly for a better visual comparison. The predicted vs actual share prices were similar enough to be believable, but not close enough to be considered accurate. 
-![Prediction Plot](Code/Resources/stats_copy.jpg)
-After the forecast, we took a closer look at the relationship between Brent Oil Price & LNG Price vs Share Price. In the plots shown, Brent Oil Price does not have a strong relationship with most company Share Prices, LNG Price appears to have a slightly stronger relationship with Share Price than Brent had.
+
+![Prediction Plot](Code/Resources/plotly.png)
+
+After the forecast, we took a closer look at the relationship between Brent Oil Price & LNG Price vs Share Price. In the plots shown, **Brent Oil Price does not appear to have a strong relationship with most company Share Prices, LNG Price appears to have a slightly stronger relationship** with Share Price than Brent had.
 ## Brent Oil Price vs. Share Price
-![Brent vs. SP](Code/Resources/stats_copy.jpg)
+![Brent vs. SP](Code/Resources/Brent.png)
 ## LNG Price vs. Share Price
-![Brent vs. SP](Code/Resources/stats_copy.jpg)
+![Brent vs. SP](Code/Resources/LNG.png)
 
 ### Conclusions
+* Scores are low for all model types
+* Chosen independent variables do not have a significant affect on the Share Price of Oil & Gas companies
+* Even with low score, price predicitions were still in a belivable range
+* Data collection & ensuring data is clean is often the most tedious part of Machine Learning
+* Importance of understanding what each model is doing to properly interpret the output
+
+### Assumptions 
+* Data is normalized 
+* Variable are independent in order to prevent bias
+* Independent variables have a relationship with dependent variable
+
+### If We Had More Time
+* Research what are the top factors affecting Energy share prices
+* Research if Carbon Emissions reporting has an affect on share prices
+* Create new data set that reflects the lag effect that Oil Prices may have on share prices (i.e. oil prices in Q2 would affect share price in Q3)
+
+#### Tools Used:
+* numpy
+* **pandas**
+* seaborn 
+* **matplotlib**
+* statsmodels
+* **sklearn**
+* pmdarima
+* **plotly**
+* holoviews
+* **SQL**
+
+*Bold denotes a required tool*
