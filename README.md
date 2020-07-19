@@ -25,4 +25,14 @@ After having a general idea of the data, we moved to the next step of building M
 
 Other linear models used were **Lasso, Ridge, & ElasticNet** that reduce variation in the data by increasing bias and penalizing the coefficients that are farther from zero. Still, all of these models showed a weak relationship between indepent and dependent variables. **All had MSE above .8 and R2 score below .30, which means there is a very weak relationship.**
 
-
+We then tried to use non-linear models on the data. These included **Decision Tree & Random Forest** and checked the importance of columns in the random forest. **Decision tree only showed 10% accuracy and random forest showed 7.7% accuracy.** An interesting finding was that on the decision tree importance ranking Brent Oil Price & LNG Pricee were found as more significant and US Unemployment was founds as less significant. 
+<pre><code>
+[(0.20605433490259506, 'Revenue_B_USD'),
+ (0.18525105444926565, 'CashFlow_B_USD'),
+ (0.15940987904502657, 'DividendYield_Percent'),
+ (0.11934434374586309, 'Brent_USD'),
+ (0.11579472494985532, 'LNG_USD'),
+ (0.10891831024240926, 'US_Interest_Percent'),
+ (0.10522735266498491, 'US_Unemployment_Percent'),
+ (0.0, 'SharePrice_USD')]
+</code></pre>
