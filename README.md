@@ -51,7 +51,7 @@ After the forecast, we took a closer look at the relationship between Brent Oil 
 * Scores are low for all model types
 * Chosen independent variables do not have a significant affect on the Share Price of Oil & Gas companies
 * Even with low score, price predicitions were still in a belivable range
-* Data collection & ensuring dtaa is clean is often th most tedious part of Machine Learning
+* Data collection & ensuring data is clean is often the most tedious part of Machine Learning
 * Importance of understanding what each model is doing to properly interpret the output
 
 ### Assumptions 
