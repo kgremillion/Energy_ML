@@ -8,6 +8,7 @@
 
 ## Project Summary:
 A million-dollar question is what factors can be used to predict future share prices? Our humble attempt was to brainstorm about what internal & external factors would most likely impact share prices of large Energy companies. Four factors for each was selected:
+
 **Internal:** Revenue, Expenses, Divident Yield, & Cash Flow
 
 **External:** US Interest Rate, US Unemployment Rate, Brent Oil Price, & LNG Price
