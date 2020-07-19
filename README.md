@@ -38,7 +38,7 @@ We then tried to use non-linear models on the data. These included **Decision Tr
  (0.0, 'SharePrice_USD')]</code></pre>
  
 The next step was to use Auto Arima to forecast and visualize the last few quarters of data half of 2017 Q2 data, all 2017 Q3 data, & all 2017 Q4 data. **The objective was to check the actual share price in comparison to the predicted share price.** After the prediction I exported the data points and replotted them using plotly for a better visual comparison. The predicted vs actual share prices were similar enough to be believable, but not close enough to be considered accurate. 
-![Prediction Plot](Code/Resources/stats_copy.jpg)
+![Prediction Plot](Code/Resources/plotly.png)
 After the forecast, we took a closer look at the relationship between Brent Oil Price & LNG Price vs Share Price. In the plots shown, Brent Oil Price does not have a strong relationship with most company Share Prices, LNG Price appears to have a slightly stronger relationship with Share Price than Brent had.
 ## Brent Oil Price vs. Share Price
 ![Brent vs. SP](Code/Resources/stats_copy.jpg)
