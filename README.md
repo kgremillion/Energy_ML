@@ -19,4 +19,4 @@ We gathered quarterly data from the years 2005-2017 using Yahoo Finance, FRED, &
 
 We started by running a coefficient matrix to check that all variables were independent of each other. It was found that Expenses & Revenue were highly related, therefore we decided to drop Expenses to reduce bias in the dataset. Then we ran a statistical summary to check the significance. It was found that Revenue, Dividend Yield, Cash Flow, & Unemployment Rate were all significant and the remaining variables were insignificant. 
 
-![Stats](Code/Resources/stats copy.jpg)
+![Stats](Code/Resources/stats_copy.jpg)
