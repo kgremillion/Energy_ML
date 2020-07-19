@@ -35,3 +35,4 @@ We then tried to use non-linear models on the data. These included **Decision Tr
  (0.10891831024240926, 'US_Interest_Percent'),
  (0.10522735266498491, 'US_Unemployment_Percent'),
  (0.0, 'SharePrice_USD')]</code></pre>
+The next step was to use Auto Arima to forecast and visualizethe last few quarters of data. **The objective was to check the actual share price in comparison to the predicted share price.** After the prediction 
