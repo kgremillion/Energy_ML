@@ -23,4 +23,6 @@ We started by running a coefficient matrix to check that all variables were inde
 
 After having a general idea of the data, we moved to the next step of building ML models. The sklearn library was used to build the model. We began with a **linear regression model** because it seemed best suited for the data as proven by the residual plot that showed data points scattered around the horizonal line. The **R2 score was .364** which meant there was a weak or low relationship between the dependent & independent variables.
 
-Other linear models used were **Lasso, Ridge, & ElasticNet** that reduce variation in the data by increasing bias and penalizing the coefficients that are farther from zero. Still, all of these models showed a weak relationship between indepent and dependent variables. **All has MSE above .8 and R2 score below .30, which means there is a very weak relationship.**
+Other linear models used were **Lasso, Ridge, & ElasticNet** that reduce variation in the data by increasing bias and penalizing the coefficients that are farther from zero. Still, all of these models showed a weak relationship between indepent and dependent variables. **All had MSE above .8 and R2 score below .30, which means there is a very weak relationship.**
+
+
