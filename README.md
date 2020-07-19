@@ -64,4 +64,3 @@ After the forecast, we took a closer look at the relationship between Brent Oil 
 * pmdarima
 * plotly
 * holoviews
-* html/css
