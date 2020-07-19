@@ -15,7 +15,7 @@ A million-dollar question is what factors can be used to predict future share pr
 
 **External:** US Interest Rate, US Unemployment Rate, Brent Oil Price, & LNG Price
 
-We gathered quarterly data from the years 2005-2017 using Yahoo Finance, FRED, & Macrotrends websites. Data was gathered for 6 selected large energy companues: **Exxon ( XOM ), BP, Equinor ( EQNR ), Chevron ( CVX ), Shell ( RDS-A ), & Total ( TOT ).** This created a dataset of 312 records. 
+We gathered quarterly data from the years 2005-2017 using Yahoo Finance, FRED, & Macrotrends websites. Data was gathered for 6 selected large energy companues: **Exxon ( XOM ), BP, Equinor ( EQNR ), Chevron ( CVX ), Shell ( RDS-A ), & Total ( TOT ).** This created a dataset of 312 records. SQL was used for data transformation & cleaning.
 
 We started by running a coefficient matrix to check that all variables were independent of each other. It was found that Expenses & Revenue were highly related, therefore we decided to drop Expenses to reduce bias in the dataset. Then we ran a statistical summary to check the significance. **Revenue, Dividend Yield, Cash Flow, & Unemployment Rate were all significant and the remaining variables were insignificant.** 
 
@@ -64,3 +64,4 @@ After the forecast, we took a closer look at the relationship between Brent Oil 
 * pmdarima
 * plotly
 * holoviews
+* SQL
