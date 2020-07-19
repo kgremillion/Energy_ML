@@ -54,6 +54,16 @@ After the forecast, we took a closer look at the relationship between Brent Oil 
 * Data collection & ensuring dtaa is clean is often th most tedious part of Machine Learning
 * Importance of understanding what each model is doing to properly interpret the output
 
+# Assumptions 
+* Data is normalized 
+* Variable are independent in order to prevent bias
+* Independent variables have a relationship with dependent variable
+
+### If We Had More Time
+* Research what are the top factors affecting Energy share prices
+* Research if Carbon Emissions reporting has an affect on share prices
+* Create new data set that reflects the lag effect that Oil Prices may have on share prices (i.e. oil prices in Q2 would affect share price in Q3)
+
 ## Tools Used:
 * numpy
 * pandas
