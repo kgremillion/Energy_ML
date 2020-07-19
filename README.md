@@ -41,8 +41,8 @@ The next step was to use Auto Arima to forecast and visualize the last few quart
 ![Prediction Plot](Code/Resources/plotly.png)
 After the forecast, we took a closer look at the relationship between Brent Oil Price & LNG Price vs Share Price. In the plots shown, Brent Oil Price does not have a strong relationship with most company Share Prices, LNG Price appears to have a slightly stronger relationship with Share Price than Brent had.
 ## Brent Oil Price vs. Share Price
-![Brent vs. SP](Code/Resources/stats_copy.jpg)
+![Brent vs. SP](Code/Resources/Brent.png)
 ## LNG Price vs. Share Price
-![Brent vs. SP](Code/Resources/stats_copy.jpg)
+![Brent vs. SP](Code/Resources/LNG.png)
 
 ### Conclusions
