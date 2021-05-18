@@ -66,14 +66,12 @@ After the forecast, we took a closer look at the relationship between Brent Oil 
 
 #### Tools Used:
 * numpy
-* **pandas**
+* pandas
 * seaborn 
-* **matplotlib**
+* matplotlib
 * statsmodels
-* **sklearn**
+* sklearn
 * pmdarima
-* **plotly**
+* plotly
 * holoviews
-* **SQL**
-
-*Bold denotes a required tool*
+* SQL
