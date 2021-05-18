@@ -2,7 +2,7 @@
 ![Stock Market Image](Code/Resources/luis-rocha-3UyoEEZBUhQ-unsplash.jpg)
 
 
-## Project Question:
+## Question:
 ### Do external and internal factors have an impact on the share price of Energy companies? If so, which factors are more important?
 
 ## Objective:
